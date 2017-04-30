@@ -24,7 +24,7 @@ public class Weather {
 
 			 String pmi25 = doc.getElementById("cur_pm25").text();
 			 String pmi10 = doc.getElementById("cur_pm10").text();
-			 returnHtml.append("<html>").append("Mandir Marg: Delhi - ").append("OverAll Status: <b>").append(overAllStatusTitle).append("</b> and overall AQI: <b>").append(overAllAQIValue).append("</b> <br>PMI-2.5: ").append(pmi25).append("as of ").append(updatedAtTime).append("<br> PMI-10: ").append(pmi10).append("<br><br> PMI 2.5, <br>0-50 = Good,<br> 51-100 = Moderate,<br>101-150 = Moderately Unhealhty, <br> 150 - 200 = Unhealthy, <br> 201-300: Very Unhealthy<br> 300+: Hazadaorus").append("</html>");
+			 returnHtml.append("<html>").append("Mandir Marg: Delhi - ").append("OverAll Status: <b>").append(overAllStatusTitle).append("</b> and overall AQI: <b>").append(overAllAQIValue).append("</b> <br>PMI-2.5: ").append(pmi25).append("  ").append(updatedAtTime).append("<br> PMI-10: ").append(pmi10).append("<br><br> PMI 2.5, <br>0-50 = Good,<br> 51-100 = Moderate,<br>101-150 = Moderately Unhealhty, <br> 150 - 200 = Unhealthy, <br> 201-300: Very Unhealthy<br> 300+: Hazadaorus").append("</html>");
 			 returnValue=returnHtml.toString();
 			 
 			} catch (Exception ee){
@@ -47,7 +47,7 @@ public class Weather {
 
 		 String pmi25 = doc.getElementById("cur_pm25").text();
 		 String pmi10 = doc.getElementById("cur_pm10").text();
-		 returnHtml.append("").append("Mandir Marg: Delhi - ").append("OverAll Status: ").append(overAllStatusTitle).append(" and overall AQI: ").append(overAllAQIValue).append(" as of ").append(updatedAtTime).append(" Visit http://pollution.vikramkumar.org for details.");
+		 returnHtml.append("").append("Mandir Marg: Delhi - ").append("OverAll Status: ").append(overAllStatusTitle).append(" and overall AQI: ").append(overAllAQIValue).append("  ").append(updatedAtTime).append(" Visit http://pollution.vikramkumar.org for details.");
 		 returnValue=returnHtml.toString();
 		 
 		} catch (Exception ee){
